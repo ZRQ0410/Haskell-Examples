@@ -29,7 +29,7 @@ descrLen :: Descriptive a => a -> Int
 descrLen x = length(describe x)
 
 -- need to use Int explicitly
--- main = print(describe (1::Int))  -- 21
+-- main = print(describe (1::Int))  -- The loniest number :(
 
 -- main = print(describe [True, True, False])
 -- Yep!, then Yep!, then Don't bet on it!, then Nothing else!
@@ -37,7 +37,7 @@ descrLen x = length(describe x)
 
 
 -- built-in Eq a
--- a is an instance of Eq: values can be compared fot equality
+-- a is an instance of Eq: values can be compared for equality
 
 -- define our own Eq
 class MyEq a where
